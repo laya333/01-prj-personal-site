@@ -2,10 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <title>Kalaya | Web Developer</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/d20e9113f8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- The header keeps the site name and navigation together. -->
+  <header class="site-header">
+    <a class="logo" href="#home">K.C.N<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <form class="search-form" role="search">
+      <label for="site-search">Search this site</label>
+      <input type="search" id="site-search" placeholder="Search" aria-label="Search this site">
+      <button type="submit">Go</button>
+    </form>
+  </header>
+
+  <main>
+    <!-- The hero is the first thing visitors see. -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">Knowledge. Creativity. Network.</p>
+        <h1> <br>You think it... <em>We create it</em>!</h1>
+        <p class="hero-text">Hi, I'm <strong>Kalaya</strong>. Keep scrolling to learn a little more about me.</p>
+        <a class="button" href="#contact">Let's connect <span aria-hidden="true">&#8594;</span></a>
+      </div>
+    </section>
+
+    <!-- The about section is a short introduction visitors can scan quickly. -->
+    <section class="section about" id="about">
+      <p class="section-label">02 / About me</p>
+      <div class="section-heading">
+        <h2>A bit<br><em>about me.</em></h2>
+        <div class="about-copy">
+          <p>Hello. I'm Kalaya, a student web developer whose building her skills one project at a time. I care about thoughtful design, making ideas come to life, and the color purple.</p>
+          <p>When I'm away from my laptop, you can usually find me listening to music, reading a book, or drawing in my sketchbook.</p>
+        </div>
+        <div class="about-image">
+          <img src="https://media.istockphoto.com/id/849220498/photo/blue-tiger-butterfly-on-a-pink-zinnia-flower-with-green-background.jpg?s=612x612&w=0&k=20&c=McO2dHI1oL0KITPuqXmZbRsk4ePnnXg1yP1283LwRDM=" alt="A butterfly resting on a flower">
+        </div>
+      </div>
+    </section>
+
+    <!-- Add or remove skills as you learn more tools. -->
+    <section class="section skills" id="skills">
+      <p class="section-label">03 / Skills</p>
+      <h2>Tools I'm<em> working with.</em></h2>
+      <div class="skill-list">
+        <div class="skill"><span>01</span><strong>HTML</strong><p>Page structure</p></div>
+        <div class="skill"><span>02</span><strong>CSS</strong><p>Visual design</p></div>
+        <div class="skill"><span>03</span><strong>JavaScript</strong><p>Interactivity</p></div>
+      </div>
+    </section>
+
+    <!-- Replace the placeholder text with details about your own projects. -->
+    <section class="section projects" id="projects">
+      <p class="section-label">04 / Projects</p>
+      <div class="section-heading">
+        <h2>Things I've<em> been making.</em></h2>
+        <p class="projects-intro">I’m just getting started, but new projects will be added here as I build them throughout my web development course. Check back soon! Something new is always in the works.</p>
+      </div>
+      <div class="project-list">
+        <article class="project">
+          <p class="project-number">01</p>
+          <h3>Project title</h3>
+          <p>Add a short description of what you made and what you learned.</p>
+          <a href="#contact">View project <span aria-hidden="true">&#8599;</span></a>
+        </article>
+      </div>
+    </section>
+
+    <!-- The contact section gives visitors a clear next step. -->
+    <section class="contact" id="contact">
+      <div>
+        <p class="section-label">05 / Contact</p>
+        <h2>Have an idea?<br><em>Let's talk.</em></h2>
+      </div>
+      <div class="contact-details">
+        <p>I'm always open to a friendly hello, a creative collaboration, or a conversation about the web.</p>
+        <a class="email" href="mailto:kreations@gmail.com">kreations@gmail.com <span aria-hidden="true">&#8599;</span></a>
+        <a class="phone" href="tel:+15551234567" aria-label="Call Kalaya at 830-476-5664">
+          <i class="fa-solid fa-phone phone-icon" aria-hidden="true"></i> (830) 476-5664
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Kalaya C. Nelson</p>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
